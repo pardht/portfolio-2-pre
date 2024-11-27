@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glancee</title>
+    <link rel="icon" type="image/x-icon" href="image/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        .dancing {
+            font-family: "Dancing Script", cursive;
+        }
+    </style>
+</head>
+
+<body style="background-image: url('image/livingroom03.jpg');" class="w-full h-auto bg-contain  font-light text-white ">
+    <div class="w-full h-full bg-black/40 backdrop-blur-3xl">
+        <div class="w-full max-w-[1250px] h-full mx-auto py-[15px]  space-y-2  px-[15px] ">
+            <!-- navbar  -->
+            <div
+                class="w-full max-w-[1220px] h-[56px] fixed bg-[#707070]/30 backdrop-blur-2xl  shadow-md pl-4 pr-2 flex justify-center items-center rounded-[30px] ">
+                <div class="w-full h-full flex items-center space-x-2">
+                    <div class=""><i class="fa-solid fa-bullseye fa-2xl text-[#FFBB00] cursor-pointer"></i></div>
+                    <div class="flex space-x-[4px]">
+                        <div
+                            class="w-[90px] h-[45px] flex items-center justify-center rounded-full hover:bg-[#d9d9d9]/20 cursor-pointer">
+                            Home</div>
+                        <div
+                            class="w-[90px] h-[45px] flex items-center justify-center rounded-full bg-[#d9d9d9]/20 duration-200 cursor-pointer">
+                            About</div>
+                    </div>
+                    <div class="w-full flex justify-center items-center">
+                        <div
+                            class="flex items-center px-4  w-[450px] h-[45px] bg-[#5f5f5f]/50 rounded-full shadow-inner shadow-black/25">
+                            <div><i class="fa-solid fa-magnifying-glass fa-lg text-white/70"></i></div>
+                            <input type="text" name="" id="" placeholder="Search"
+                                class="placeholder-white/70 bg-transparent focus:ring-0 border-none    ">
+                        </div>
+                    </div>
+                    <div class="flex space-x-[4px]">
+                        <div
+                            class="w-[45px] h-[45px] flex items-center justify-center rounded-full bg-[#d9d9d9]/20 hover:bg-[#FFBB00] cursor-pointer duration-200">
+                            <i class="border-2 px-[4px] py-[10px] rounded-md fa-regular fa-plus fa-sm"></i>
+                        </div>
+                        <div
+                            class="w-[45px] h-[45px] flex items-center justify-center rounded-full bg-[#d9d9d9]/20  hover:bg-[#FFBB00] cursor-pointer duration-200">
+                            <i class="fa-solid fa-bell fa-lg"></i>
+                        </div>
+                        <div
+                            class="w-[170px] h-[45px] flex items-center rounded-full px-2 space-x-[3px] group bg-[#d9d9d9]/20  hover:bg-[#FFBB00] cursor-pointer duration-200 ">
+                            <a href="./profile.html" class="w-full h-full flex items-center space-x-[3px]">
+                                <div><img src="image/digo.jpg" alt="" width="32" height="32" class="rounded-full ">
+                                </div>
+                                <div class="flex flex-col justify-center">
+                                    <div class="text-[12px] font-medium">Randy Paradhita</div>
+                                    <div class="text-[10px] flex items-center space-x-[1px]"><i
+                                            class="fa-solid fa-bullseye fa-sm text-[#FFBB00] group-hover:text-white duration-200 "></i>
+                                        <p>randyparadhita</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- navbar end -->
+            <!-- main  -->
+            <div class="pt-[56px] w-full  space-y-3">
+                <div class="rounded-[20px] relative w-full h-auto ">
+                    <div
+                        class="w-full h-full  flex p-10 items-start justify-start absolute z-50 backdrop-blur-md rounded-[30px] gap-3">
+                        <p class="text-4xl font-medium tracking-widest animate-pulse">옛날 옛적에, 한 작은 마을에 한 소녀가 살았어요. 그녀의 이름은 하나였고, 그녀는 밤하늘의 별들을 사랑했어요. 매일 밤, 그녀는 언덕 위에 올라가 별들을 바라보며 소원을 빌었죠.
+
+                            "별들아, 별들아," 하나는 속삭였어요. "언젠가 나도 너희처럼 빛날 수 있을까?"
+                            
+                            어느 날 밤, 하늘에서 유난히 밝은 별 하나가 떨어졌어요. 놀란 하나는 별이 떨어진 숲으로 달려갔어요. 숲 깊은 곳에서 그녀는 작은 빛나는 돌을 발견했어요.
+                            
+                            그 돌은 마법의 힘을 가지고 있었어요. "네가 진정으로 원하는 것이 있다면, 나를 사용해라," 돌이 말했어요.
+                            
+                            하나는 잠시 생각하다가 웃으며 대답했어요. "나는 내 마을과 사람들을 돕고 싶어요. 그들이 행복하게 살 수 있도록 빛이 되고 싶어요."
+                            
+                            그 순간, 돌은 밝게 빛났고, 하나는 온 마을에 퍼질 수 있는 따뜻하고 부드러운 빛으로 변했어요. 마을 사람들은 그녀의 빛 덕분에 어둠 속에서도 길을 찾을 수 있게 되었어요.
+                            
+                            하나는 비록 자신의 모습은 사라졌지만, 그녀의 마음은 마을 사람들 속에 영원히 남아 있었어요.</p>
+                    </div>
+                    <div
+                        class="w-full h-full  flex p-10 items-end justify-end absolute z-50 backdrop-blur-[2px] rounded-[30px] gap-3">
+                        <p class="text-3xl font-medium tracking-wide animate-pulse">Randy Paradhita</p>
+                        <p>Front-End Developer</p>
+                    </div>
+                    <div
+                        class="w-full h-full  flex p-10 items-end justify-end absolute z-50 backdrop-blur-[5px]  rounded-[30px] gap-3">
+                        <p class="text-3xl font-medium tracking-wide animate-pulse">Randy Paradhita</p>
+                        <p class="animate-pulse">Front-End Developer</p>
+                    </div>
+                    <div class="w-full flex gap-2 py-5 absolute z-50 px-5">
+                        <div class="p-[6px] rounded-full bg-red-500"></div>
+                        <div class="p-[6px] rounded-full bg-yellow-500"></div>
+                        <div class="p-[6px] rounded-full bg-green-500"></div>
+                    </div>
+                    <div>
+                        <img src="image/sot01.png" alt="" class="opacity-80 rounded-[30px]">
+                    </div>
+                </div>
+
+                <!-- about  -->
+                <div class=" bg-black/40 px-5 pb-5   rounded-[30px]">
+                    <div class="w-full flex gap-2 py-5 relative items-center text-white/60 text-sm">
+                        <div class="p-[6px] rounded-full bg-red-500"></div>
+                        <div class="p-[6px] rounded-full bg-yellow-500"></div>
+                        <div class="p-[6px] rounded-full bg-green-500"></div>
+                        <div class="absolute w-full flex justify-center">
+                            <p class="font-extralight tracking-wide">About me</p>
+                        </div>
+                        <div class="absolute w-full flex justify-end">
+                            <p class="font-extralight tracking-wide">나에 대해서</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <!-- <div class=" bg-black/20 rounded-[20px] text-white/60">
+                            <div class="w-full flex  relative  items-center">
+                                <div class="flex gap-2 px-3 py-2">
+                                    <div class="p-[4px] rounded-full bg-red-500 "></div>
+                                    <div class="p-[4px] rounded-full bg-yellow-500"></div>
+                                    <div class="p-[4px] rounded-full bg-green-500"></div>
+                                </div>
+                                <div class="absolute w-full flex justify-center">
+                                    <p class="font-extralight tracking-wide text-xs">ran's face</p>
+                                </div>
+                                <div class="absolute w-full flex justify-end pr-3">
+                                    <p class="font-extralight tracking-wide text-xs">내 얼굴</p>
+                                </div>
+                            </div>
+                            <img src="image/k02.jpg" alt="" class="w-[600px] rounded-b-[20px]">
+                        </div> -->
+                        <div class=" bg-black/40 rounded-[20px]">
+                            <div class="w-full py-4 px-5 flex  relative  items-center">
+                                <p class="dancing text-2xl font-bold">Instagram</p>
+                            </div>
+                            <div class="px-5">
+                                <img src="image/k02.jpg" alt="" class="w-[600px] rounded-[10px]">
+                            </div>
+                            <div class="w-full py-6 px-6 flex  relative  items-center">
+                                <div class="flex gap-3 py-2">
+                                    <i class="fa-regular fa-heart fa-xl"></i>
+                                    <i class="fa-regular fa-comment fa-xl"></i>
+                                    <i class="fa-regular fa-paper-plane fa-lg"></i>
+                                </div>
+                                <div class="absolute w-full flex justify-end pr-12">
+                                    <i class="fa-regular fa-bookmark fa-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full  flex flex-col gap-3">
+                            <div
+                                class=" w-full p-8 rounded-r-[20px] rounded-bl-[50px] rounded-tl-[5px] bg-black/40 space-y-2">
+                                <p class="text-3xl font-semibold dancing tracking-widest ">Hallo!</p>
+                                <p class="text-lg">
+                                    I'm Randy, a <span class="text-[#FFBB00]">programmier enthusiast</span> who loves
+                                    turning ideas into reality.
+
+                                </p>
+                            </div>
+                            <div class=" w-full  p-8 rounded-[20px] bg-black/40 space-y-2">
+                                <p class="text-lg">
+                                    In my free time, I enjoy playing <span class="text-[#FFBB00]">basketball</span> and
+                                    diving into immersive <span class="text-[#FFBB00]">gaming</span>
+                                    experiences.
+                                </p>
+                            </div>
+                            <div class=" w-full h-full p-8 rounded-[20px] bg-black/40 space-y-2">
+                                <p class="text-lg">
+                                    My dream is to <span class="text-[#FFBB00]">travel over the world</span>, exploring
+                                    new cultures and gaining
+                                    fresh perspectives while continuing to learn and grow.
+                                </p>
+                            </div>
+                            <div class="flex  gap-2">
+                                <div class="p-[20px] flex items-center rounded-[20px] bg-black/40 ">
+                                    <img src="image/html.png" alt="" class="w-[40px]">
+                                </div>
+                                <div class="p-[20px] flex items-center rounded-[20px] bg-black/40 ">
+                                    <img src="image/css.png" alt="" class="w-[40px]">
+                                </div>
+                                <div class="p-[20px] flex items-center rounded-[20px] bg-black/40 ">
+                                    <img src="image/jss.png" alt="" class="w-[40px]">
+                                </div>
+                                <div class="p-[20px] flex items-center rounded-[20px] bg-black/40 ">
+                                    <img src="image/php.png" alt="" class="w-[40px]">
+                                </div>
+                                <div class="p-[20px] flex items-center rounded-[20px] bg-black/40 ">
+                                    <img src="image/python.png" alt="" class="w-[40px]">
+                                </div>
+                                <div class="p-[20px] flex items-center rounded-[20px] bg-black/40 ">
+                                    <img src="image/figma.png" alt="" class="w-[40px]">
+                                </div>
+                                <div class="p-[20px] flex items-center rounded-[20px] bg-black/40 ">
+                                    <img src="image/react.png" alt="" class="w-[40px]">
+                                </div>
+                                <div class="p-[20px] flex items-center rounded-[20px] bg-black/40 ">
+                                    <img src="image/nextjs.png" alt="" class="w-[40px]">
+                                </div>
+                                <div class="p-[20px] flex items-center rounded-[20px] bg-black/40 ">
+                                    <img src="image/tailwind.png" alt="" class="w-[40px]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- about ends -->
+                <!-- faq section  -->
+                <div class="bg-black/40 px-5 pb-5   rounded-[30px]">
+                    <div class="w-full flex gap-2 py-5 relative items-center text-white/60 text-sm">
+                        <div class="p-[6px] rounded-full bg-red-500"></div>
+                        <div class="p-[6px] rounded-full bg-yellow-500"></div>
+                        <div class="p-[6px] rounded-full bg-green-500"></div>
+                        <div class="absolute w-full flex justify-center">
+                            <p class="font-extralight tracking-wide">Frequently Asked Question</p>
+                        </div>
+                        <div class="absolute w-full flex justify-end">
+                            <p class="font-extralight tracking-wide">자주묻는질문</p>
+                        </div>
+                    </div>
+                    <!-- faq skills  -->
+                    <div class="space-y-3 ">
+                        <div
+                            class=" backdrop-blur-3xl text-lg p-10 rounded-[20px] bg-blue-800/20 flex items-center shadow-md shadow-black/40">
+                            <p class="w-full">What can Randy Paradhita possibly do</p>
+                            <p class=" flex justify-end font-semibold text-xl">?</p>
+                        </div>
+                        <div class="grid grid-cols-9 gap-3">
+                            <div
+                                class="col-span-3 h-[200px] backdrop-blur-3xl  p-10 rounded-[20px] bg-blue-800/10 flex-col justify-center  group cursor-pointer border-r-[2px] border-b-[2px] border-transparent hover:border-[#FFBB00] hover:duration-500">
+                                <div class="flex items-center gap-4 relative pt-2 ">
+                                    <i
+                                        class="fa-solid fa-crop-simple fa-2xl text-white/10 group-hover:text-white/70 group-hover:duration-200"></i>
+                                    <p
+                                        class="flex justify-center w-full absolute font-semibold text-xl  group-hover:text-[#FFBB00]">
+                                        UI/UX Design
+                                    </p>
+                                </div>
+                                <div
+                                    class="h-full flex items-end text-white/80 group-hover:text-white/100 group-hover:duration-200">
+                                    <p class="">Enhances user experience through intuitive, visually appealing
+                                        interfaces using
+                                        <span class="font-semibold group-hover:text-[#FFBB00]">Figma</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="col-span-3 backdrop-blur-3xl  p-10 rounded-[20px] bg-blue-800/10 flex-col justify-center group cursor-pointer border-r-[2px] border-b-[2px] border-transparent hover:border-[#FFBB00] hover:duration-500">
+                                <div class="flex items-center gap-4 relative pt-2">
+                                    <i
+                                        class="fa-solid fa-code fa-2xl text-white/10 group-hover:text-white/70 group-hover:duration-200"></i>
+                                    <div
+                                        class="flex flex-col text-center justify-center w-full absolute font-semibold text-xl group-hover:text-[#FFBB00]">
+                                        <p class="">Front-end</p>
+                                        <p class="">Development</p>
+                                    </div>
+                                </div>
+                                <div class="h-full flex items-end group-hover:text-white/100 group-hover:duration-200">
+                                    <p class="">Creates responsive, user-friendly websites using <span
+                                            class="font-semibold group-hover:text-[#FFBB00]">ReactJS</span>, <span
+                                            class="font-semibold group-hover:text-[#FFBB00]">NextJS</span>,
+                                        and
+                                        <span class="font-semibold group-hover:text-[#FFBB00]">Tailwind CSS</span>.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="col-span-3  backdrop-blur-3xl  p-10  rounded-[20px] bg-blue-800/10 flex-col justify-center group cursor-pointer border-r-[2px] border-b-[2px] border-transparent hover:border-[#FFBB00] hover:duration-500">
+                                <div class="flex items-center gap-4 relative pt-2">
+                                    <i
+                                        class="fa-solid fa-database fa-2xl text-white/10 group-hover:text-white/70 group-hover:duration-200"></i>
+                                    <div
+                                        class="flex flex-col text-center justify-center w-full  absolute font-semibold text-xl group-hover:text-[#FFBB00]">
+                                        <p class="">Back-end</p>
+                                        <p class="">Development</p>
+                                    </div>
+                                </div>
+                                <div class="h-full  flex items-end group-hover:text-white/100 group-hover:duration-200">
+                                    <p class="">Creating <span
+                                            class="font-semibold group-hover:text-[#FFBB00]">APIs</span> and handling
+                                        <span class="font-semibold group-hover:text-[#FFBB00]">Databases</span> to
+                                        support
+                                        frontend functionality and data processing.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- faq skills ends -->
+                        <!-- faq projects  -->
+                        <div
+                            class=" backdrop-blur-3xl text-lg p-10 rounded-[20px] bg-blue-800/20 flex items-center shadow-md shadow-black/40">
+                            <p class="w-full">Is there any project that Randy Paradhita has created</p>
+                            <p class=" flex justify-end font-semibold text-xl">?</p>
+                        </div>
+                        <div class="grid grid-cols-9 gap-3">
+                            <div
+                                class="col-span-3  bg-blue-800/10 backdrop-blur-3xl rounded-[20px] flex flex-col group relative ">
+                                <div class="w-full flex  relative  items-center">
+                                    <div class="flex gap-2 px-3 py-2">
+                                        <div class="p-[4px] rounded-full bg-red-500 "></div>
+                                        <div class="p-[4px] rounded-full bg-yellow-500"></div>
+                                        <div class="p-[4px] rounded-full bg-green-500"></div>
+                                    </div>
+                                    <div class="absolute w-full flex justify-center">
+                                        <p class="font-extralight tracking-wide text-xs">Recovery Bar Service</p>
+                                    </div>
+                                </div>
+                                <img src="image/project01.png" alt="" class="rounded-b-[20px]">
+                                <div
+                                    class="absolute w-full h-full p-5 pt-8  bg-gradient-to-t from-black to-black/40 backdrop-blur-[2px] rounded-[20px]  hidden group-hover:block cursor-pointer">
+                                    <div class="w-full h-full flex flex-col justify-between space-y-3">
+                                        <p class="font-medium text-lg">Recovery Bar Service</p>
+                                        <div>
+                                            <p>Welcome to our page, where we are focusing on giving experience to our
+                                                belove
+                                                customer...</p>
+                                            <i class="fa-solid fa-link justify-end flex"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div
+                                class="col-span-3  bg-blue-800/10 backdrop-blur-3xl rounded-[20px] flex flex-col group relative ">
+                                <div class="w-full flex  relative  items-center">
+                                    <div class="flex gap-2 px-3 py-2">
+                                        <div class="p-[4px] rounded-full bg-red-500 "></div>
+                                        <div class="p-[4px] rounded-full bg-yellow-500"></div>
+                                        <div class="p-[4px] rounded-full bg-green-500"></div>
+                                    </div>
+                                    <div class="absolute w-full flex justify-center">
+                                        <p class="font-extralight tracking-wide text-xs">Glancee - UI/UX</p>
+                                    </div>
+                                </div>
+                                <img src="image/project02.png" alt="" class="rounded-b-[20px]">
+                                <div
+                                    class="absolute w-full h-full p-5 pt-8  bg-gradient-to-t from-black to-black/40 backdrop-blur-[2px] rounded-[20px]  hidden group-hover:block cursor-pointer">
+                                    <div class="w-full h-full flex flex-col justify-between space-y-3">
+                                        <p class="font-medium text-lg">Glancee - UI/UX</p>
+                                        <div>
+                                            <p>Glancee is a gallery web app for sharing ideas, creativity, aesthetic by
+                                                posting images or videos...</p>
+                                            <!-- <i class="fa-solid fa-link justify-end flex"></i> -->
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div
+                                class="col-span-3  bg-blue-800/10 backdrop-blur-3xl rounded-[20px] flex flex-col group relative ">
+                                <div class="w-full flex  relative  items-center">
+                                    <div class="flex gap-2 px-3 py-2">
+                                        <div class="p-[4px] rounded-full bg-red-500 "></div>
+                                        <div class="p-[4px] rounded-full bg-yellow-500"></div>
+                                        <div class="p-[4px] rounded-full bg-green-500"></div>
+                                    </div>
+                                    <div class="absolute w-full flex justify-center">
+                                        <p class="font-extralight tracking-wide text-xs">Glancee - Movie App</p>
+                                    </div>
+                                </div>
+                                <img src="image/project01.png" alt="" class="rounded-b-[20px]">
+                                <div
+                                    class="absolute w-full h-full p-5 pt-8  bg-gradient-to-t from-black to-black/40 backdrop-blur-[2px] rounded-[20px]  hidden group-hover:block cursor-pointer">
+                                    <div class="w-full h-full flex flex-col justify-between space-y-3">
+                                        <p class="font-medium text-lg">Recovery Bar Service</p>
+                                        <div>
+                                            <p>Welcome to our page, where we are focusing on giving experience to our
+                                                belove
+                                                customer...</p>
+                                            <i class="fa-solid fa-link justify-end flex"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- faq projects ends -->
+                        <!-- faq get in touch -->
+                        <div
+                            class="backdrop-blur-3xl text-lg p-10 rounded-[20px] bg-blue-800/20 flex items-center shadow-md shadow-black/40">
+                            <p class="w-full">How can I contact or get in touch with Randy Paradhita</p>
+                            <p class=" flex justify-end font-semibold text-xl">?</p>
+                        </div>
+                        <div class="grid grid-cols-10 gap-3">
+                            <div
+                                class="col-span-7 backdrop-blur-3xl  p-10 rounded-[20px] bg-blue-800/10 flex-col justify-center space-y-2 ">
+                                <p class="">There are several ways you can contact or get in touch with me such as</p>
+                            </div>
+                            <a href="/" class="group">
+                                <div
+                                    class="backdrop-blur-3xl  p-10 rounded-[20px] bg-blue-800/10 flex-col justify-center space-y-2 group-hover:opacity-90 ">
+                                    <i class="fa-brands fa-linkedin fa-2xl group-hover:text-blue-500"></i>
+                                </div>
+                            </a>
+                            <a href="/" class="group">
+                                <div
+                                    class="backdrop-blur-3xl  p-10 rounded-[20px] bg-blue-800/10 flex-col justify-center space-y-2  group-hover:opacity-90">
+                                    <i class="fa-regular fa-envelope fa-2xl group-hover:text-red-500"></i>
+                                </div>
+                            </a>
+                            <a href="/" class="group">
+                                <div
+                                    class="backdrop-blur-3xl  p-10 rounded-[20px] bg-blue-800/10 flex-col justify-center space-y-2 group-hover:opacity-90 ">
+                                    <i class="fa-brands fa-whatsapp fa-2xl group-hover:text-green-500"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- faq get in touch ends -->
+                <!-- faq section ends -->
+                <!-- social media me  -->
+                <div class=" bg-black/40 px-5 pb-5   rounded-[30px]">
+                    <div class="w-full flex gap-2 py-5 relative items-center text-white/60 text-sm">
+                        <div class="p-[6px] rounded-full bg-red-500"></div>
+                        <div class="p-[6px] rounded-full bg-yellow-500"></div>
+                        <div class="p-[6px] rounded-full bg-green-500"></div>
+                        <div class="absolute w-full flex justify-center">
+                            <p class="font-extralight tracking-wide">Find me</p>
+                        </div>
+                        <div class="absolute w-full flex justify-end">
+                            <p class="font-extralight tracking-wide">나를찾아줘</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 relative">
+                        <img src="image/doodle.jpg" alt=""
+                            class=" w-full h-[690px] opacity-10 z-[-100] bg-auto absolute  rounded-[20px] bg-blackrounded-[20px]">
+                        <div class="p-5">
+                            <div class="flex  gap-2">
+                                <div class="">
+                                    <div class="border-[4px] border-teal-950 rounded-full p-[3px]">
+                                        <img src="image/k02.jpg" alt="" class="w-[60px] rounded-full ">
+                                    </div>
+                                </div>
+                                <div
+                                    class="backdrop-blur-3xl text-lg rounded-r-[20px] rounded-bl-[50px] rounded-tl-[10px]  bg-teal-950/50 flex items-center ">
+                                    <p class="w-full flex  p-10">Find me on social media
+                                        <span class=" flex justify-end font-semibold text-xl"> ! 😁😁😁😘</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex justify-end gap-2">
+                                <div class="flex flex-col items-end gap-2">
+                                    <div
+                                        class=" backdrop-blur-3xl text-lg rounded-l-[20px] rounded-br-[50px] rounded-tr-[10px]  bg-teal-600/50 flex items-center ">
+                                        <p class="w-full flex  p-10">Umm, how..</p>
+                                        <p
+                                            class="  flex justify-center items-center p-3 text-sm font-regular opacity-50 gap-2">
+                                            16:31 <i class="fa-solid fa-check-double"></i></p>
+                                    </div>
+                                    <div
+                                        class="backdrop-blur-3xl text-lg  rounded-[20px]  bg-teal-600/50 flex items-center ">
+                                        <p class="w-full flex p-10">how would i know your social media username </p>
+                                        <p
+                                            class="  flex justify-center items-center p-3 text-sm font-regular opacity-50 gap-2">
+                                            16:32 <i class="fa-solid fa-check-double"></i></p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="border-[4px] border-teal-950 rounded-full p-[3px]">
+                                        <img src="image/pratama.png" alt="" class="w-[60px] rounded-full ">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex  gap-2">
+                                <div class="">
+                                    <div class="border-[4px] border-teal-950 rounded-full p-[3px]">
+                                        <img src="image/k02.jpg" alt="" class="w-[60px] rounded-full ">
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex gap-2 ">
+                                        <a href="/" class="group">
+                                            <div
+                                                class="backdrop-blur-3xl  p-10 rounded-r-[20px] rounded-bl-[50px] rounded-tl-[10px] bg-teal-950/50 flex-col justify-center space-y-2 group-hover:bg-white group-hover:duration-200">
+                                                <i
+                                                    class="fa-brands fa-github fa-2xl group-hover:text-black group-hover:duration-200"></i>
+                                            </div>
+                                        </a>
+                                        <a href="/" class="group">
+                                            <div
+                                                class="backdrop-blur-3xl  p-10 rounded-[20px] bg-teal-950/50 flex-col justify-center space-y-2  bg-gradient-to-tr group-hover:from-[#f9ce34] group-hover:via-[#ee2a7b]  group-hover:to-[#6228d7] group-hover:duration-500">
+                                                <i
+                                                    class="fa-brands fa-instagram fa-2xl group-hover:text-white group-hover:duration-200"></i>
+                                            </div>
+                                        </a>
+                                        <a href="/" class="group">
+                                            <div
+                                                class="backdrop-blur-3xl  p-10 rounded-[20px] bg-teal-950/50 flex-col justify-center space-y-2 group-hover:bg-white  group-hover:duration-500">
+                                                <i
+                                                    class="fa-brands fa-youtube fa-2xl group-hover:text-red-500 group-hover:duration-200"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="backdrop-blur-3xl text-lg  rounded-[20px]  bg-teal-950/50 flex items-center ">
+                                        <p class="w-full flex p-10">Feel free to click any of the links above to connect
+                                            with me!</p>
+                                    </div>
+                                    <div class="text-lg  flex items-center ">
+                                        <div
+                                            class="p-10 bg-black rounded-[20px] flex items-center gap-[2px] backdrop-blur-3xl bg-teal-950/50 ">
+                                            <div class="p-[4px] bg-white rounded-full animate-pulse"></div>
+                                            <div class="p-[4px] bg-white rounded-full animate-bounce"></div>
+                                            <div class="p-[4px] bg-white rounded-full animate-pulse"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- social media me ends -->
+            </div>
+
+
+            <!-- main ends -->
+            <!-- footer  -->
+            <div class="w-full max-w-[1250px] h-auto mx-auto">
+                <div class="w-full rounded-[30px] bg-black/40 py-5 px-10">
+                    <p class="text-sm font-thin text-center text-white/80">© Copyright Randy Paradhita 2024.</p>
+                    <p class="text-sm font-thin text-center text-white/80">
+                        All rights reserved. Alle Rechte vorbehalten. Lahat ng karapatan ay nakalaan. <span
+                            class="text-white/50">Все права защищены. 모든권리는보호됩니다. 無断転載を禁じます. 版权所有. جميع الحقوق
+                            محفوظة</span>
+                    </p>
+                </div>
+            </div>
+            <!-- footer  ends-->
+        </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries">
+    </script>
+</body>
+
+</html>
