@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head class="scroll-smooth">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+     html {
+            font-family: "Poppins", sans-serif;
+            padding: 0;
+            margin: 0;
+            overflow: -moz-scrollbars-none;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            
+        }
+</style>
 
-<body>
+<body class="scroll-smooth">
+    <a href="#about">a</a>
+
     <div class="w-full h-screen flex items-center justify-center">
         <div class="w-full max-w-[1000px] grid grid-cols-8  ">
             <div class=" col-span-8 grid  grid-cols-4 grid-rows-2 gap-2">
@@ -32,6 +45,11 @@
                 <div class="col-span-2 p-10 bg-red-500/50"></div>
             </div>
         </div>
+        
+    </div>
+
+    <div id="about" class="h-[200vh]">
+        about
     </div>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries">
     </script>

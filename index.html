@@ -13,11 +13,22 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries">
+    </script>
     <style>
-        body {
+        html::-webkit-scrollbar {
+            display: none;
+
+        }
+
+        html {
             font-family: "Poppins", sans-serif;
             padding: 0;
             margin: 0;
+            overflow: -moz-scrollbars-none;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+
         }
 
         .dancing {
@@ -35,12 +46,21 @@
                 <div class="w-full h-full flex items-center space-x-2">
                     <div class=""><i class="fa-solid fa-bullseye fa-2xl text-[#FFBB00] cursor-pointer"></i></div>
                     <div class="flex space-x-[4px]">
-                        <div
-                            class="w-[90px] h-[45px] flex items-center justify-center rounded-full hover:bg-[#d9d9d9]/20 cursor-pointer">
-                            Home</div>
-                        <div
-                            class="w-[90px] h-[45px] flex items-center justify-center rounded-full bg-[#d9d9d9]/20 duration-200 cursor-pointer">
-                            About</div>
+                        <a href="#about">
+                            <div
+                                class="w-[90px] h-[45px] flex items-center justify-center rounded-full hover:bg-[#d9d9d9]/20 cursor-pointer">
+                                About</div>
+                        </a>
+                        <a href="#faqs">
+                            <div
+                                class="w-[90px] h-[45px] flex items-center justify-center rounded-full hover:bg-[#d9d9d9]/20 duration-200 cursor-pointer">
+                                FAQs</div>
+                        </a>
+                        <a href="#contact">
+                            <div
+                                class="w-[90px] h-[45px] flex items-center justify-center rounded-full hover:bg-[#d9d9d9]/20 duration-200 cursor-pointer">
+                                Contact</div>
+                        </a>
                     </div>
                     <div class="w-full flex justify-center items-center">
                         <div
@@ -56,11 +76,18 @@
                             <i class="border-2 px-[4px] py-[10px] rounded-md fa-regular fa-plus fa-sm"></i>
                         </div>
                         <div
-                            class="w-[45px] h-[45px] flex items-center justify-center rounded-full bg-[#d9d9d9]/20  hover:bg-[#FFBB00] cursor-pointer duration-200">
+                            class="w-[45px] h-[45px] flex items-center justify-center rounded-full bg-[#d9d9d9]/20 group  hover:bg-[#FFBB00] cursor-pointer duration-200">
+                            <div class="w-[45px] h-[45px] absolute flex justify-end p-[2px]">
+                                <div class="absolute p-[5px] rounded-full bg-[#FFBB00] group-hover:bg-white">
+                                </div>
+                                <div
+                                    class="absolute p-[5px] rounded-full bg-[#FFBB00] group-hover:bg-white animate-ping">
+                                </div>
+                            </div>
                             <i class="fa-solid fa-bell fa-lg"></i>
                         </div>
                         <div
-                            class="w-[170px] h-[45px] flex items-center rounded-full px-2 space-x-[3px] group bg-[#d9d9d9]/20  hover:bg-[#FFBB00] cursor-pointer duration-200 ">
+                            class="w-[150px] h-[45px] flex items-center rounded-full px-2 space-x-[3px] group bg-[#d9d9d9]/20  hover:bg-[#FFBB00] cursor-pointer duration-200 ">
                             <a href="./profile.html" class="w-full h-full flex items-center space-x-[3px]">
                                 <div><img src="image/digo.jpg" alt="" width="32" height="32" class="rounded-full ">
                                 </div>
@@ -82,18 +109,20 @@
                 <div class="rounded-[20px] relative w-full h-auto ">
                     <div
                         class="w-full h-full  flex p-10 items-start justify-start absolute z-50 backdrop-blur-md rounded-[30px] gap-3">
-                        <p class="text-4xl font-medium tracking-widest animate-pulse">옛날 옛적에, 한 작은 마을에 한 소녀가 살았어요. 그녀의 이름은 하나였고, 그녀는 밤하늘의 별들을 사랑했어요. 매일 밤, 그녀는 언덕 위에 올라가 별들을 바라보며 소원을 빌었죠.
+                        <p class="text-4xl font-medium tracking-widest animate-pulse">옛날 옛적에, 한 작은 마을에 한 소녀가 살았어요. 그녀의
+                            이름은 하나였고, 그녀는 밤하늘의 별들을 사랑했어요. 매일 밤, 그녀는 언덕 위에 올라가 별들을 바라보며 소원을 빌었죠.
 
                             "별들아, 별들아," 하나는 속삭였어요. "언젠가 나도 너희처럼 빛날 수 있을까?"
-                            
+
                             어느 날 밤, 하늘에서 유난히 밝은 별 하나가 떨어졌어요. 놀란 하나는 별이 떨어진 숲으로 달려갔어요. 숲 깊은 곳에서 그녀는 작은 빛나는 돌을 발견했어요.
-                            
+
                             그 돌은 마법의 힘을 가지고 있었어요. "네가 진정으로 원하는 것이 있다면, 나를 사용해라," 돌이 말했어요.
-                            
+
                             하나는 잠시 생각하다가 웃으며 대답했어요. "나는 내 마을과 사람들을 돕고 싶어요. 그들이 행복하게 살 수 있도록 빛이 되고 싶어요."
-                            
-                            그 순간, 돌은 밝게 빛났고, 하나는 온 마을에 퍼질 수 있는 따뜻하고 부드러운 빛으로 변했어요. 마을 사람들은 그녀의 빛 덕분에 어둠 속에서도 길을 찾을 수 있게 되었어요.
-                            
+
+                            그 순간, 돌은 밝게 빛났고, 하나는 온 마을에 퍼질 수 있는 따뜻하고 부드러운 빛으로 변했어요. 마을 사람들은 그녀의 빛 덕분에 어둠 속에서도 길을 찾을 수 있게
+                            되었어요.
+
                             하나는 비록 자신의 모습은 사라졌지만, 그녀의 마음은 마을 사람들 속에 영원히 남아 있었어요.</p>
                     </div>
                     <div
@@ -115,9 +144,10 @@
                         <img src="image/sot01.png" alt="" class="opacity-80 rounded-[30px]">
                     </div>
                 </div>
+                <!-- main ends -->
 
                 <!-- about  -->
-                <div class=" bg-black/40 px-5 pb-5   rounded-[30px]">
+                <div id="about" class=" bg-black/40 px-5 pb-5   rounded-[30px]">
                     <div class="w-full flex gap-2 py-5 relative items-center text-white/60 text-sm">
                         <div class="p-[6px] rounded-full bg-red-500"></div>
                         <div class="p-[6px] rounded-full bg-yellow-500"></div>
@@ -130,43 +160,33 @@
                         </div>
                     </div>
                     <div class="flex gap-3">
-                        <!-- <div class=" bg-black/20 rounded-[20px] text-white/60">
-                            <div class="w-full flex  relative  items-center">
-                                <div class="flex gap-2 px-3 py-2">
-                                    <div class="p-[4px] rounded-full bg-red-500 "></div>
-                                    <div class="p-[4px] rounded-full bg-yellow-500"></div>
-                                    <div class="p-[4px] rounded-full bg-green-500"></div>
+                        <!-- my picture  -->
+                        <a href="https://www.instagram.com/">
+                            <div class=" bg-black/40 rounded-[20px] hover:translate-y-[-3px] cursor-pointer transition">
+                                <div class="w-full py-4 px-5 flex  relative  items-center">
+                                    <p class="dancing text-2xl font-bold">Instagram</p>
                                 </div>
-                                <div class="absolute w-full flex justify-center">
-                                    <p class="font-extralight tracking-wide text-xs">ran's face</p>
+                                <div class="px-5">
+                                    <img src="image/g01.jpg" alt="" class="w-[600px] rounded-[10px]">
                                 </div>
-                                <div class="absolute w-full flex justify-end pr-3">
-                                    <p class="font-extralight tracking-wide text-xs">내 얼굴</p>
-                                </div>
-                            </div>
-                            <img src="image/k02.jpg" alt="" class="w-[600px] rounded-b-[20px]">
-                        </div> -->
-                        <div class=" bg-black/40 rounded-[20px]">
-                            <div class="w-full py-4 px-5 flex  relative  items-center">
-                                <p class="dancing text-2xl font-bold">Instagram</p>
-                            </div>
-                            <div class="px-5">
-                                <img src="image/k02.jpg" alt="" class="w-[600px] rounded-[10px]">
-                            </div>
-                            <div class="w-full py-6 px-6 flex  relative  items-center">
-                                <div class="flex gap-3 py-2">
-                                    <i class="fa-regular fa-heart fa-xl"></i>
-                                    <i class="fa-regular fa-comment fa-xl"></i>
-                                    <i class="fa-regular fa-paper-plane fa-lg"></i>
-                                </div>
-                                <div class="absolute w-full flex justify-end pr-12">
-                                    <i class="fa-regular fa-bookmark fa-xl"></i>
+                                <div class="w-full py-6 px-6 flex  relative  items-center">
+                                    <div class="flex gap-3 py-2">
+                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                        <i class="fa-regular fa-comment fa-xl"></i>
+                                        <i class="fa-regular fa-paper-plane fa-lg"></i>
+                                    </div>
+                                    <div class="absolute w-full flex justify-end pr-12">
+                                        <i class="fa-regular fa-bookmark fa-xl"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
+                        <!-- my picture ends -->
+
+                        <!-- my description -->
                         <div class="w-full  flex flex-col gap-3">
                             <div
-                                class=" w-full p-8 rounded-r-[20px] rounded-bl-[50px] rounded-tl-[5px] bg-black/40 space-y-2">
+                                class=" w-full h-full p-8 rounded-r-[20px] rounded-bl-[50px] rounded-tl-[5px] bg-black/40 space-y-2">
                                 <p class="text-3xl font-semibold dancing tracking-widest ">Hallo!</p>
                                 <p class="text-lg">
                                     I'm Randy, a <span class="text-[#FFBB00]">programmier enthusiast</span> who loves
@@ -189,40 +209,87 @@
                                 </p>
                             </div>
                             <div class="flex  gap-2">
-                                <div class="p-[20px] flex items-center rounded-[20px] bg-black/40 ">
+                                <div
+                                    class="p-[20px] flex items-center rounded-[20px] bg-black/40 group cursor-pointer hover:translate-y-[-3px] transition">
                                     <img src="image/html.png" alt="" class="w-[40px]">
+                                    <div
+                                        class=" absolute bg-[#FFBB00] rounded-t-[20px] rounded-bl-[10px] rounded-r-[20px] mb-[5rem] px-5 hidden group-hover:block">
+                                        <p class="font-semibold">HTML</p>
+                                    </div>
                                 </div>
-                                <div class="p-[20px] flex items-center rounded-[20px] bg-black/40 ">
+                                <div
+                                    class="p-[20px] flex items-center rounded-[20px] bg-black/40 group cursor-pointer hover:translate-y-[-3px] transition">
                                     <img src="image/css.png" alt="" class="w-[40px]">
+                                    <div
+                                        class=" absolute bg-[#FFBB00] rounded-t-[20px] rounded-bl-[10px] rounded-r-[20px] mb-[5rem] px-5 hidden group-hover:block">
+                                        <p class="font-semibold">CSS</p>
+                                    </div>
                                 </div>
-                                <div class="p-[20px] flex items-center rounded-[20px] bg-black/40 ">
+                                <div
+                                    class="p-[20px] flex items-center rounded-[20px] bg-black/40 group cursor-pointer hover:translate-y-[-3px] transition">
                                     <img src="image/jss.png" alt="" class="w-[40px]">
+                                    <div
+                                        class=" absolute bg-[#FFBB00] rounded-t-[20px] rounded-bl-[10px] rounded-r-[20px] mb-[5rem] px-5 hidden group-hover:block">
+                                        <p class="font-semibold">JavaScript</p>
+                                    </div>
                                 </div>
-                                <div class="p-[20px] flex items-center rounded-[20px] bg-black/40 ">
+                                <div
+                                    class="p-[20px] flex items-center rounded-[20px] bg-black/40 group cursor-pointer hover:translate-y-[-3px] transition">
                                     <img src="image/php.png" alt="" class="w-[40px]">
+                                    <div
+                                        class=" absolute bg-[#FFBB00] rounded-t-[20px] rounded-bl-[10px] rounded-r-[20px] mb-[5rem] px-5 hidden group-hover:block">
+                                        <p class="font-semibold">PHP</p>
+                                    </div>
                                 </div>
-                                <div class="p-[20px] flex items-center rounded-[20px] bg-black/40 ">
+                                <div
+                                    class="p-[20px] flex items-center rounded-[20px] bg-black/40 group cursor-pointer hover:translate-y-[-3px] transition">
                                     <img src="image/python.png" alt="" class="w-[40px]">
+                                    <div
+                                        class=" absolute bg-[#FFBB00] rounded-t-[20px] rounded-bl-[10px] rounded-r-[20px] mb-[5rem] px-5 hidden group-hover:block">
+                                        <p class="font-semibold">Python</p>
+                                    </div>
                                 </div>
-                                <div class="p-[20px] flex items-center rounded-[20px] bg-black/40 ">
+                                <div
+                                    class="p-[20px] flex items-center rounded-[20px] bg-black/40 group cursor-pointer hover:translate-y-[-3px] transition">
                                     <img src="image/figma.png" alt="" class="w-[40px]">
+                                    <div
+                                        class=" absolute bg-[#FFBB00] rounded-t-[20px] rounded-bl-[10px] rounded-r-[20px] mb-[5rem] px-5 hidden group-hover:block">
+                                        <p class="font-semibold">Figma</p>
+                                    </div>
                                 </div>
-                                <div class="p-[20px] flex items-center rounded-[20px] bg-black/40 ">
+                                <div
+                                    class="p-[20px] flex items-center rounded-[20px] bg-black/40 group cursor-pointer hover:translate-y-[-3px] transition">
                                     <img src="image/react.png" alt="" class="w-[40px]">
+                                    <div
+                                        class=" absolute bg-[#FFBB00] rounded-t-[20px] rounded-bl-[10px] rounded-r-[20px] mb-[5rem] px-5 hidden group-hover:block">
+                                        <p class="font-semibold">ReactJS</p>
+                                    </div>
                                 </div>
-                                <div class="p-[20px] flex items-center rounded-[20px] bg-black/40 ">
+                                <div
+                                    class="p-[20px] flex items-center rounded-[20px] bg-black/40 group cursor-pointer hover:translate-y-[-3px] transition">
                                     <img src="image/nextjs.png" alt="" class="w-[40px]">
+                                    <div
+                                        class=" absolute bg-[#FFBB00] rounded-t-[20px] rounded-bl-[10px] rounded-r-[20px] mb-[5rem] px-5 hidden group-hover:block">
+                                        <p class="font-semibold">NextJS</p>
+                                    </div>
                                 </div>
-                                <div class="p-[20px] flex items-center rounded-[20px] bg-black/40 ">
+                                <div
+                                    class="p-[20px] flex items-center rounded-[20px] bg-black/40 group cursor-pointer hover:translate-y-[-3px] transition">
                                     <img src="image/tailwind.png" alt="" class="w-[40px]">
+                                    <div
+                                        class=" absolute bg-[#FFBB00] rounded-t-[20px] rounded-bl-[10px] rounded-r-[20px] mb-[5rem] px-5 hidden group-hover:block">
+                                        <p class="font-semibold">TailwindCSS</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- my description ends -->
                     </div>
                 </div>
                 <!-- about ends -->
+
                 <!-- faq section  -->
-                <div class="bg-black/40 px-5 pb-5   rounded-[30px]">
+                <div id="faqs" class="bg-black/40 px-5 pb-5   rounded-[30px]">
                     <div class="w-full flex gap-2 py-5 relative items-center text-white/60 text-sm">
                         <div class="p-[6px] rounded-full bg-red-500"></div>
                         <div class="p-[6px] rounded-full bg-yellow-500"></div>
@@ -301,8 +368,8 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- faq skills ends -->
+
                         <!-- faq projects  -->
                         <div
                             class=" backdrop-blur-3xl text-lg p-10 rounded-[20px] bg-blue-800/20 flex items-center shadow-md shadow-black/40">
@@ -331,8 +398,18 @@
                                             <p>Welcome to our page, where we are focusing on giving experience to our
                                                 belove
                                                 customer...</p>
-                                            <i class="fa-solid fa-link justify-end flex"></i>
                                         </div>
+                                        <div class="flex gap-2">
+                                            <div
+                                                class="max-w-[80px] p-[20px] flex items-center rounded-[20px] bg-white/10 group cursor-pointer hover:translate-y-[-3px] transition">
+                                                <img src="image/nextjs.png" alt="" class="w-[40px]">
+                                            </div>
+                                            <div
+                                                class="max-w-[80px] p-[20px] flex items-center rounded-[20px] bg-white/10 group cursor-pointer hover:translate-y-[-3px] transition">
+                                                <img src="image/tailwind.png" alt="" class="w-[40px]">
+                                            </div>
+                                        </div>
+                                        <i class="fa-solid fa-link justify-end flex"></i>
                                     </div>
 
                                 </div>
@@ -357,7 +434,10 @@
                                         <div>
                                             <p>Glancee is a gallery web app for sharing ideas, creativity, aesthetic by
                                                 posting images or videos...</p>
-                                            <!-- <i class="fa-solid fa-link justify-end flex"></i> -->
+                                        </div>
+                                        <div
+                                            class="max-w-[80px] p-[20px] flex items-center rounded-[20px] bg-white/10 group cursor-pointer hover:translate-y-[-3px] transition">
+                                            <img src="image/figma.png" alt="" class="w-[40px]">
                                         </div>
                                     </div>
 
@@ -375,24 +455,32 @@
                                         <p class="font-extralight tracking-wide text-xs">Glancee - Movie App</p>
                                     </div>
                                 </div>
-                                <img src="image/project01.png" alt="" class="rounded-b-[20px]">
+                                <img src="image/project03.png" alt="" class="rounded-b-[20px]">
                                 <div
                                     class="absolute w-full h-full p-5 pt-8  bg-gradient-to-t from-black to-black/40 backdrop-blur-[2px] rounded-[20px]  hidden group-hover:block cursor-pointer">
                                     <div class="w-full h-full flex flex-col justify-between space-y-3">
-                                        <p class="font-medium text-lg">Recovery Bar Service</p>
+                                        <p class="font-medium text-lg">Glancee - Movie App</p>
                                         <div>
-                                            <p>Welcome to our page, where we are focusing on giving experience to our
-                                                belove
-                                                customer...</p>
-                                            <i class="fa-solid fa-link justify-end flex"></i>
+                                            <p>A movie app created using NextJS, TailwindCSS, and TMDB API</p>
                                         </div>
+                                        <div class="flex gap-2">
+                                            <div
+                                                class="max-w-[80px] p-[20px] flex items-center rounded-[20px] bg-white/10 group cursor-pointer hover:translate-y-[-3px] transition">
+                                                <img src="image/nextjs.png" alt="" class="w-[40px]">
+                                            </div>
+                                            <div
+                                                class="max-w-[80px] p-[20px] flex items-center rounded-[20px] bg-white/10 group cursor-pointer hover:translate-y-[-3px] transition">
+                                                <img src="image/tailwind.png" alt="" class="w-[40px]">
+                                            </div>
+                                        </div>
+                                        <i class="fa-solid fa-link justify-end flex"></i>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
-
                         <!-- faq projects ends -->
+
                         <!-- faq get in touch -->
                         <div
                             class="backdrop-blur-3xl text-lg p-10 rounded-[20px] bg-blue-800/20 flex items-center shadow-md shadow-black/40">
@@ -402,9 +490,10 @@
                         <div class="grid grid-cols-10 gap-3">
                             <div
                                 class="col-span-7 backdrop-blur-3xl  p-10 rounded-[20px] bg-blue-800/10 flex-col justify-center space-y-2 ">
-                                <p class="">There are several ways you can contact or get in touch with me such as</p>
+                                <p class="text-lg">There are several ways you can contact or get in touch with me such
+                                    as</p>
                             </div>
-                            <a href="/" class="group">
+                            <a href="https://www.linkedin.com/" class="group">
                                 <div
                                     class="backdrop-blur-3xl  p-10 rounded-[20px] bg-blue-800/10 flex-col justify-center space-y-2 group-hover:opacity-90 ">
                                     <i class="fa-brands fa-linkedin fa-2xl group-hover:text-blue-500"></i>
@@ -423,12 +512,13 @@
                                 </div>
                             </a>
                         </div>
+                        <!-- faq get in touch ends -->
                     </div>
                 </div>
-                <!-- faq get in touch ends -->
                 <!-- faq section ends -->
+
                 <!-- social media me  -->
-                <div class=" bg-black/40 px-5 pb-5   rounded-[30px]">
+                <div id="contact" class=" bg-black/40 px-5 pb-5   rounded-[30px]">
                     <div class="w-full flex gap-2 py-5 relative items-center text-white/60 text-sm">
                         <div class="p-[6px] rounded-full bg-red-500"></div>
                         <div class="p-[6px] rounded-full bg-yellow-500"></div>
@@ -447,7 +537,7 @@
                             <div class="flex  gap-2">
                                 <div class="">
                                     <div class="border-[4px] border-teal-950 rounded-full p-[3px]">
-                                        <img src="image/k02.jpg" alt="" class="w-[60px] rounded-full ">
+                                        <img src="image/g01.jpg" alt="" class="w-[60px] rounded-full ">
                                     </div>
                                 </div>
                                 <div
@@ -455,20 +545,23 @@
                                     <p class="w-full flex  p-10">Find me on social media
                                         <span class=" flex justify-end font-semibold text-xl"> ! 😁😁😁😘</span>
                                     </p>
+                                    <p
+                                        class="  flex justify-center items-center p-3 text-sm font-regular opacity-50 gap-2">
+                                        03:03</p>
                                 </div>
                             </div>
                             <div class="flex justify-end gap-2">
                                 <div class="flex flex-col items-end gap-2">
                                     <div
                                         class=" backdrop-blur-3xl text-lg rounded-l-[20px] rounded-br-[50px] rounded-tr-[10px]  bg-teal-600/50 flex items-center ">
-                                        <p class="w-full flex  p-10">Umm, how..</p>
+                                        <p class="w-full flex  p-10">How...</p>
                                         <p
                                             class="  flex justify-center items-center p-3 text-sm font-regular opacity-50 gap-2">
                                             16:31 <i class="fa-solid fa-check-double"></i></p>
                                     </div>
                                     <div
                                         class="backdrop-blur-3xl text-lg  rounded-[20px]  bg-teal-600/50 flex items-center ">
-                                        <p class="w-full flex p-10">how would i know your social media username </p>
+                                        <p class="w-full flex p-10">how would i know your social media username ? </p>
                                         <p
                                             class="  flex justify-center items-center p-3 text-sm font-regular opacity-50 gap-2">
                                             16:32 <i class="fa-solid fa-check-double"></i></p>
@@ -483,26 +576,26 @@
                             <div class="flex  gap-2">
                                 <div class="">
                                     <div class="border-[4px] border-teal-950 rounded-full p-[3px]">
-                                        <img src="image/k02.jpg" alt="" class="w-[60px] rounded-full ">
+                                        <img src="image/g01.jpg" alt="" class="w-[60px] rounded-full ">
                                     </div>
                                 </div>
                                 <div class="flex flex-col gap-2">
                                     <div class="flex gap-2 ">
-                                        <a href="/" class="group">
+                                        <a href="https://github.com/" class="group">
                                             <div
                                                 class="backdrop-blur-3xl  p-10 rounded-r-[20px] rounded-bl-[50px] rounded-tl-[10px] bg-teal-950/50 flex-col justify-center space-y-2 group-hover:bg-white group-hover:duration-200">
                                                 <i
                                                     class="fa-brands fa-github fa-2xl group-hover:text-black group-hover:duration-200"></i>
                                             </div>
                                         </a>
-                                        <a href="/" class="group">
+                                        <a href="https://www.instagram.com/" class="group">
                                             <div
                                                 class="backdrop-blur-3xl  p-10 rounded-[20px] bg-teal-950/50 flex-col justify-center space-y-2  bg-gradient-to-tr group-hover:from-[#f9ce34] group-hover:via-[#ee2a7b]  group-hover:to-[#6228d7] group-hover:duration-500">
                                                 <i
                                                     class="fa-brands fa-instagram fa-2xl group-hover:text-white group-hover:duration-200"></i>
                                             </div>
                                         </a>
-                                        <a href="/" class="group">
+                                        <a href="https://www.youtube.com/" class="group">
                                             <div
                                                 class="backdrop-blur-3xl  p-10 rounded-[20px] bg-teal-950/50 flex-col justify-center space-y-2 group-hover:bg-white  group-hover:duration-500">
                                                 <i
@@ -514,6 +607,9 @@
                                         class="backdrop-blur-3xl text-lg  rounded-[20px]  bg-teal-950/50 flex items-center ">
                                         <p class="w-full flex p-10">Feel free to click any of the links above to connect
                                             with me!</p>
+                                        <p
+                                            class="  flex justify-center items-center p-3 text-sm font-regular opacity-50 gap-2">
+                                            21:07</p>
                                     </div>
                                     <div class="text-lg  flex items-center ">
                                         <div
@@ -547,8 +643,6 @@
             <!-- footer  ends-->
         </div>
     </div>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries">
-    </script>
 </body>
 
 </html>
